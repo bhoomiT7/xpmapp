@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="app_name">XpmApp</string>
+  <string name="title_activity_main">XpmApp</string>
+  <string name="package_name">io.ionic.starter</string>
+  <string name="custom_url_scheme">io.ionic.starter</string>
+
+  <!-- Add new string resources here -->
+  <string name="hello_world">Hello, World!</string>
+  <string name="welcome_message">Welcome to XpmApp!</string>
+</resources>

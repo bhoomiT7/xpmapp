@@ -1,0 +1,85 @@
+<ion-header class="toolbar-container">
+  <ion-toolbar  >
+    <div class="search-avatar-container ion-margin-top ion-margin-bottom">
+      <ion-icon name="arrow-back-outline" color="medium" class="mt-6" size="large" [routerLink]="['/home2']"></ion-icon>
+      <ion-searchbar class="search"></ion-searchbar>
+    
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+<div class="eventmaincontent">
+  <h2 style="margin-left: 15px;"><b>Event</b></h2>
+  <ion-modal #modal trigger="open-modal">
+    <ng-template>
+      <ion-content >
+        <ion-toolbar color="primary">
+          <ion-title >Add event</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal.dismiss()">Close</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-list>
+            <ion-item>
+              <ion-label position="floating">Event</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item class="ion-margin-top">
+              <ion-datetime-button datetime="datetime"></ion-datetime-button>
+              <ion-modal [keepContentsMounted]="true">
+                <ng-template>
+                  <ion-datetime id="datetime"></ion-datetime>
+                </ng-template>
+              </ion-modal>
+            </ion-item>
+            
+            <ion-button class="ion-margin-top">Submit</ion-button>
+            <ion-button class="ion-margin-top">Cancel</ion-button>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+  <ion-card class="maincard">
+    <div class="flex-container">
+      <h5><ion-icon name="calendar-number-outline" style="height: 20px; width: 20px; font-weight: bold;"></ion-icon>&nbsp;02-02-2023<br><br>Ugadi/Gudi Padwa</h5>
+      <ion-icon class="iconevent" name="create-outline" color="primary" size="large"></ion-icon>
+    </div>
+  </ion-card>
+  <ion-card>
+    <div class="flex-container">
+      <h5><ion-icon name="calendar-number-outline" style="height: 20px; width: 20px; font-weight: bold;"></ion-icon>&nbsp;02-02-2023<br><br>Vaikunta Ekadashi</h5>
+        <ion-icon class="iconevent" name="create-outline" color="primary" size="large"></ion-icon>
+    </div>
+  </ion-card>
+  <ion-card>
+    <div class="flex-container"> 
+      <h5><ion-icon name="calendar-number-outline" style="height: 20px; width: 20px; font-weight: bold;"></ion-icon>&nbsp;02-02-2023<br><br>Akhand Ramayan Paath</h5>
+        <ion-icon class="iconevent" name="create-outline" color="primary" size="large"></ion-icon>
+    </div>
+  </ion-card>
+  <ion-card>
+    <div class="flex-container">
+      <h5><ion-icon name="calendar-number-outline" style="height: 20px; width: 20px; font-weight: bold;"></ion-icon>&nbsp;02-02-2023<br><br>Sri Ayyappa Swami Puja</h5>
+        <ion-icon class="iconevent" name="create-outline" color="primary" size="large"></ion-icon>
+    </div>
+  </ion-card>
+  <ion-card>
+    <div class="flex-container">
+      <h5><ion-icon name="calendar-number-outline" style="height: 20px; width: 20px; font-weight: bold;"></ion-icon>&nbsp;02-02-2023<br><br>MahaShivaratri</h5>
+        <ion-icon class="iconevent" name="create-outline" color="primary" size="large"></ion-icon>
+    </div>
+  </ion-card>
+    <ion-card>
+      <div class="flex-container">
+      <h5><ion-icon name="calendar-number-outline" style="height: 20px; width: 20px; font-weight: bold;"></ion-icon>&nbsp;02-02-2023<br><br>Sri Ramanavami</h5>
+        <ion-icon class="iconevent" slot="end" name="create-outline" color="primary" size="large"></ion-icon>
+      </div>
+    </ion-card>
+  </div>
+  </ion-content>
+  <div class="sticky-button">
+    <ion-button id="open-modal">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-button>
+  </div>
+
