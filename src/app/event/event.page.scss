@@ -1,11 +1,24 @@
 .no-scroll {
   --overflow: hidden;
 }
+ion-content{
+  // --ion-background-color:black;
+  margin:0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.page-container{
+  background-color: red;
+}
 .search{
     margin-top:10px;
+    margin-bottom:10px;
   }
   .search-avatar-container {
     display: flex;
+   
 
   }
   .mt-5{
@@ -15,19 +28,10 @@
     margin-top:13px;
   }
   .maincard{
-    width: auto;
     margin-left:15px !important;
     margin-right:15px !important;
   }
-.flex-container {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    padding-top: 15px; 
-    padding-left: 10px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-  }
+
   .addevent {
     display: flex;
     justify-content: flex-end; 
@@ -49,9 +53,7 @@
   //   display: flex;
   //   justify-content: end;
   // }
-  .iconevent{
-    margin-left: auto; 
-  }
+  
   ion-modal {
     --height: 50%;
     --border-radius: 16px;
@@ -71,12 +73,119 @@
   }
   .sticky-button {
   position: fixed;
-  bottom: 20px;
-  left: 280px;
-  z-index: 999;
+  bottom: 70px;
+  left: 300px;
   width: 150px;
-  }
-  .eventmaincontent{
-    width: 100% !important;
+  
+
   }
  
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .calendar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:10px !important;
+    padding-right:5px;
+   
+   
+    
+  }
+  .iconevent{
+    margin-top: 25px;
+  }
+  
+  
+  .date-details {
+    display: flex;
+    align-items: center;
+    padding-top: -15px;
+    padding-bottom: 10px;
+  }
+  
+  .event-details {
+  margin-left: 10px;
+  margin-top: -20px;
+  
+
+  }
+  .eventsubdetails {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+.eventcard{
+  margin: 0;
+  padding: 10px;
+}
+.eventtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+  margin-left: 20px;
+  color: gray;
+}
+.eventdate{
+font-family: 'Poppins', sans-serif;
+font-size: 17px;
+font-weight: bold;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.calendar-icon{
+  font-size: 25px;
+  margin-top: 2px;
+}
+
+.menu {
+  display: flex;
+  margin-left: 13px;
+  margin-right:13px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  gap: 5px;
+
+}
+
+.menu-item {
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  width: 120px;
+  height: 60px;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 5px;
+}
+
+.menu-item:hover {
+  background-color: #e84b29;
+  color: #f0f0f0;
+}
+
+.menu-item.selected {
+  background-color: #e84b29;
+  color: #f0f0f0;
+}
+  
+  
+  
+  
+  
+  

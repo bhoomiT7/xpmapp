@@ -1,188 +1,303 @@
+
+ion-content {
+  --ion-background-color: #f4f4f4;
+  // --ion-padding: 20px;
+}
+.header{
+  width: 100%;
+  padding-left: 20px;
+}
+
+/* Your existing styles */
+
 .no-scroll::-webkit-scrollbar {
   display: none !important;
-  --overflow:hidden;
+  overflow: hidden; /* Corrected the property */
 }
-.box{
-    border: 1px solid gray;
-    width: 100%;
-  }
-  .custom-item {
-    display: flex;
-    flex-direction: column;
-   
-  
-  }
-  .custom-select {
+
+.box {
   border: 1px solid gray;
   width: 100%;
-  border-radius: 5px;
-  }
-  .ion-margin-bottom {
-    margin-bottom: 30px;
-  }
-  .ion-margin-top{
-    margin-top: 20px;
-  }
-  .logo{
-        margin-top: 20px;
-      
-  }
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
+}
+
+.custom-item {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.ion-margin-bottom {
+  margin-bottom: 30px;
+}
+
+.ion-margin-top {
+  margin-top: 20px;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: gray;
+}
+
+.mt-5 {
+  margin-top: 10px;
+}
+
+.iconcolor {
+  color: gray;
+}
+
+.icondemo {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #089de3;
+}
+
+.search {
+  margin-top: 10px;
+}
+
+.search-avatar-container {
+  display: flex;
+}
+
+
+
+.toolbar-background {
+  background-color: pink;
+}
+
+.icon-text-container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.textdetails{
+  color: white;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+
+.texttitle {
+  text-align: left;
+  margin-left: 15px;
+  margin-top:5px;
+}
+
+.last-icon {
+  margin-left: auto;
+}
+
+.head {
+  display: flex;
+  overflow-x: auto;
+  padding-left: 18px;
+  padding-right: 18px;
+  gap: 20px;
+}
+
+.head ion-card {
+  margin: 0 !important;
+  padding: 0 !important;
   
-  /* Optional: To style the buttons within the flex container */
-  .flex-container ion-button {
-    color: white;
-    font-weight: bold;
-  }
-  h1 {
-    font-family: Arial, sans-serif;
-    font-size: 30px;
-    color: black;  
-    font-weight: bold ;
-    
-  }
-  span{
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: gray;
-    //text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  }
-  .mt-5{
-    margin-top:10px;
-  }
-  .iconcolor{
-    color:gray
-  }
-  .icondemo{
-   font-size: 20px;
-   margin-top: 15px;
- color:#089de3;
-  }
-  .search{
-    margin-top:10px;
-  }
-  .search-avatar-container {
-    display: flex;
-  }
-  .footer {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 15px !important;
-    border:1px solid gray;
-    border-radius: 30px;
-    padding-top: 3px;
-    padding-bottom: 5px !important;
-  }
-  .toolbar-background {
-    background-color: pink;
-  }
-  .icon-text-container {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border-radius: 15px;
-  }
+}
+
+.icon {
+  display: flex;
+  overflow-x: auto;
+  height: 70px;
+  width: 70px;
+  color: #ffffff;
+}
+.titletop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: LightSlateGray;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
+.textheading {
+  color: #ffffff;
+  align-items: left;
+}
+.card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 180px;
+  margin-right: 15px;
+  box-sizing: border-box;
+  background: url('../../assets/images/back1.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7));
   
-  .texttitle {
-    text-align: left;
-    margin-left: 15px;
-  }
-  
-  .last-icon {
-    margin-left: auto; 
-  }
-  
-  
+}
+.card2 {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 180px;
+  margin-right: 15px;
+  box-sizing: border-box;
+  background: url('../../assets/images/back2.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
  
-  .card-container {
-    display: flex;
-    overflow-x: auto; 
+}
+.card2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7));
+  
+}
+.card3 {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 180px;
+  margin-right: 15px;
+  box-sizing: border-box;
+  background: url('../../assets/images/back3.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
  
-  }
+}
+.card3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7));
   
-  .icon{
-    display: flex;
-    overflow-x: auto; 
-    height: 70px;
-    width: 70px;
-    color: #ffffff;
+}
+.card4 {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 180px;
+  margin-right: 15px;
+  box-sizing: border-box;
+  background: url('../../assets/images/back4.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
  
-  }
-  .textheading{
-    padding-top: 15px;
-    padding-left:10px;
-    color: #ffffff;
-   
-  }
-  .text{
-    padding-top: 5px;
-    padding-left:15px;
-    color: #ffffff;
-  }
-  
-  .card {
-    flex: 0 0 auto; 
-    width: 250px; 
-    height: 150px;
-    margin-right: 15px; 
-    padding: 0px 15px;
-    border-radius: 15px;
-  
+}
+.card4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7));
 
   
-  }
-  .pt{
-    padding-top:15px;
-  }
-  .ml-5{
-    margin-left:20px;
-  }
-  .merchantbox{
-    width: 90%;
-    margin-left:19px;
-    background-color: #ED7D31;
-    border-radius: 15px;
-    border:none;
-    padding: 12px;
-    color: #ffffff;
-    font-weight: bolder;
-  }
-  .Merchant{
+}
+.card5 {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 180px;
+  margin-right: 15px;
+  box-sizing: border-box;
+  background: url('../../assets/images/back5.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+ 
+}
+.card5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7));
+  
+}
+.merchantbox{
+  padding: 15px;
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-between;
+}
+.merchantbtn{
+  display: flex;
+  
+ 
+}
+.footer {
+  margin-right: 15px !important;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-top: 0px;
+  padding-bottom: 5px !important;
+  background-color: white !important;
+}
 
-    border:1px solid lightgray;
-    border-radius: 15px;
-    padding-top: 7px;
-    padding-left: 10px;
-   
-  }
-  .merchantbtn{
-    margin-left:10px;
-   
-  }
-  .mt-15{
-    margin-top:15px;
-  }
-  
-  .mar{
-   
-    padding-bottom: 10px;
-  }
-  .eventlist{
-    padding-bottom: 10px;
-  }
- 
-  
-  
-  
- 
- 
-  
-  
 
-  
-  

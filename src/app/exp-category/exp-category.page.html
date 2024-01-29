@@ -1,17 +1,17 @@
-<ion-header class="toolbar-container">
-  <ion-toolbar  >
-    <div class="search-avatar-container ion-margin-top ion-margin-bottom">
-      <!-- <img src="./assets/images/xpm-logo.png" class="header-img"> -->
-      <ion-icon name="arrow-back-outline" color="medium" class="mt-6" size="large" [routerLink]="['/home2']"></ion-icon>
-      <ion-searchbar class="search"></ion-searchbar>
-    
-    </div>
-  </ion-toolbar>
-</ion-header>
-<ion-content class="ion-padding">
-  
+
+<ion-toolbar  >
+  <div class="search-avatar-container ion-margin-top">
+    <ion-searchbar show-cancel-button="focus" class="search" placeholder="Search..."></ion-searchbar>
+  </div>
+</ion-toolbar> 
+<div class="menu">
+  <div class="menu-item" [routerLink]="['/event']" style="padding: 15px;" onclick="selectMenuItem(this)">Event</div>
+  <div class="menu-item" [routerLink]="['/exp-category']" onclick="selectMenuItem(this)">Exp Categories</div>
+  <div class="menu-item" [routerLink]="['/qb-category']" onclick="selectMenuItem(this)">QB Categories</div>
+</div>
+<ion-content>
 <div class="eventmaincontent">
-  <h2 class="ion-margin-left">Expense Category</h2>
+  <p class="exptitle">Expence Category</p>
   <ion-modal #modal trigger="open-modal">
     <ng-template>
       <ion-content >
@@ -35,51 +35,52 @@
   </ion-modal>
   <ion-card >
     <div class="flex-container">
-      <h5>	Decoration Item</h5>
-      <ion-icon class="iconevent" name="create-outline" color="primary" size="large"></ion-icon>
-      <ion-icon  slot="end" name="trash-outline" color="primary" size="large"></ion-icon>
+      <h5 class="expsubdeatails">	Decoration Item</h5>
+      <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
+      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
     </div>
   </ion-card>
   <ion-card>
     <div class="flex-container">
-      <h5>Puja Items</h5>
-        <ion-icon class="iconevent" name="create-outline" color="primary" size="large"></ion-icon>
-        <ion-icon slot="end" name="trash-outline" color="primary" size="large"></ion-icon>
+      <h5 class="expsubdeatails">Puja Items</h5>
+      <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
+      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
     </div>
   </ion-card>
   <ion-card>
     <div class="flex-container"> 
-      <h5>Cleaning Material</h5>
-        <ion-icon class="iconevent" name="create-outline" color="primary" size="large"></ion-icon>
-        <ion-icon  slot="end" name="trash-outline" color="primary" size="large"></ion-icon>
+      <h5 class="expsubdeatails">Cleaning Material</h5>
+      <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
+      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
     </div>
   </ion-card>
   <ion-card>
     <div class="flex-container">
-      <h5>Service Contract</h5>
-        <ion-icon class="iconevent" name="create-outline" color="primary" size="large"></ion-icon>
-        <ion-icon  slot="end" name="trash-outline" color="primary" size="large"></ion-icon>
+      <h5 class="expsubdeatails">Service Contract</h5>
+      <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
+      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
     </div>
   </ion-card>
   <ion-card>
     <div class="flex-container">
-      <h5>Construction Contract</h5>
-        <ion-icon class="iconevent" name="create-outline" color="primary" size="large"></ion-icon>
-        <ion-icon slot="end" name="trash-outline" color="primary" size="large"></ion-icon>
+      <h5 class="expsubdeatails">Construction Contract</h5>
+      <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
+      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
     </div>
   </ion-card>
   <ion-card>
     <div class="flex-container">
-      <h5>	Maintenance Contract</h5>
-        <ion-icon class="iconevent" slot="end" name="create-outline" color="primary" size="large"></ion-icon>
-        <ion-icon slot="end" name="trash-outline" color="primary" size="large"></ion-icon>
-      
+      <h5 class="expsubdeatails">	Maintenance Contract</h5>
+      <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
+      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
     </div>
   </ion-card>
 </div>
+<script src="./assets/js/event.js"></script>
 </ion-content>
 <div class="sticky-button">
   <ion-button id="open-modal">
     <ion-icon name="add-outline"></ion-icon>
   </ion-button>
 </div>
+<app-footer></app-footer>

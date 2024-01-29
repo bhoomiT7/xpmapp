@@ -1,104 +1,98 @@
+<ion-content >
+    <div class="page-container">
+      <div class="ion-page" id="main-content" class="no-scroll">
+        <p class="header">Invoice Details</p>
+          <div class="head">
+            <ion-card  class="card" >
+              <div class="titletop">
+                <ion-card-title class="textheading ion-margin-top">56</ion-card-title>
+              </div>
+              <p class="textdetails">Pending Expence Invoice</p>
+            </ion-card>
+            <ion-card  class="card2" >
+              <div class="titletop">
+                <ion-card-title class="textheading ion-margin-top">8</ion-card-title>
+              </div>
+              <p class="textdetails">Invoice Approved</p>
+            </ion-card>
+            <ion-card  class="card3">
+              <div class="titletop">
+                <ion-card-title class="textheading ion-margin-top">13</ion-card-title>
+              </div>
+              <ion-card-subtitle class="textdetails">Pending Expence Invoice</ion-card-subtitle>
+            </ion-card>
+            <ion-card  class="card4">
+              <div class="titletop">
+                <ion-card-title class="textheading ion-margin-top">8</ion-card-title>
+              </div>
+              <ion-card-subtitle class="textdetails">Rejected Expence Invoice</ion-card-subtitle>
+            </ion-card>
+            <ion-card  class="card5">
+              <div class="titletop">
+                <ion-card-title class="textheading ion-margin-top">5</ion-card-title>
+              </div>
+              <ion-card-subtitle class="textdetails">Pending Check Handover</ion-card-subtitle>
+            </ion-card>
+          </div>
+            <ion-card>
+              <div class="icon-text-container">
+                <ion-icon src="assets/images/event.svg"size="large"></ion-icon>
+                <p >&nbsp;&nbsp;EVENT</p>
+                <ion-icon name="arrow-forward-circle-outline" [routerLink]="['/event']"  size="large" class="last-icon"></ion-icon>
+              </div>
+            </ion-card>
+            <ion-card>
+              <div class="icon-text-container">
+                <ion-icon src="assets/images/categorilist.svg"size="large"></ion-icon>
+                <p >&nbsp;&nbsp;EXPENSE CATEGORIES</p>
+                <ion-icon name="arrow-forward-circle-outline" [routerLink]="['/exp-category']" size="large" class="last-icon"></ion-icon> 
+              </div>
+            </ion-card>
+            <ion-card>
+              <div class="icon-text-container">
+                <ion-icon src="assets/images/qbcategory.svg" size="large"></ion-icon>
+                <p >&nbsp;&nbsp;QB CATEGORIES</p>
+                <ion-icon name="arrow-forward-circle-outline" [routerLink]="['/qb-category']" size="large" class="last-icon"></ion-icon> 
+              </div>
+            </ion-card>
+            <ion-card>
+              <div class="merchantbox">
+                <div class="merchant-header">
+                  <ion-text>Merchant</ion-text>
+                  <ion-select placeholder="Select Merchant" class="Merchant">
+                    <ion-select-option value="apple">Apple</ion-select-option>
+                    <ion-select-option value="banana">Banana</ion-select-option>
+                    <ion-select-option value="orange">Orange</ion-select-option>
+                  </ion-select>
+                </div>
+                <ion-button class="merchantbtn" style="--background: #FF6347; color: #ffffff;">Show</ion-button>
+              </div>
+            </ion-card>
+      </div>
+    </div>
+    <script src="assets/js/event.js"></script>  
+</ion-content>
+<app-footer></app-footer>
+<!-- <ion-toolbar class="footer" >
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" [routerLink]="['/home2']">
+        <ion-icon src="assets/images/home.svg" size="large"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="invoice" [routerLink]="['/invoice']">
+        <ion-icon src="assets/images/invoice.svg" size="large"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="reports" [routerLink]="['/reports']">
+        <ion-icon src="assets/images/report.svg" size="large"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="users" [routerLink]="['/users']">
+        <ion-icon src="assets/images/user.svg" size="large"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar> -->
+
 
  
-  <ion-content >
-    <div class="ion-page" id="main-content" class="no-scroll">
-    <h1 class="ml-5" >Invoice <span>Details</span></h1>
-    <div class="card-container">
-      <ion-card style="background-color: #ED7D31;" class="card">
-        <div style="display: flex; align-items: left;" color="white" class="ion-margin-top">
-          <ion-icon name="document-text-outline" class="icon"></ion-icon>
-          <ion-card-title class="textheading ion-margin-top">56</ion-card-title>
-        </div>
-        <ion-card-subtitle class="text ion-margin-top">Total Invoice Submitted</ion-card-subtitle>
-      </ion-card>
-      
-      <ion-card style="background-color: #706233;" class="card" >
-        <div style="display: flex; align-items: left;" color="white" class="ion-margin-top">
-          <ion-icon name="document-text-outline"  class="icon"></ion-icon>
-          <ion-card-title class="textheading ion-margin-top">8</ion-card-title>
-        </div>
-        <ion-card-subtitle class="text ion-margin-top">Invoice Approved</ion-card-subtitle>
-      </ion-card>
-      <ion-card style="background-color: #3887BE;" class="card">
-        <div style="display: flex; align-items: left;" color="white" class="ion-margin-top">
-          <ion-icon name="document-text-outline"   class="icon"></ion-icon>
-          <ion-card-title class="textheading ion-margin-top">13</ion-card-title>
-        </div>
-        <ion-card-subtitle class="text ion-margin-top">Pending Expence Invoice</ion-card-subtitle>
-      </ion-card>
-      <ion-card style="background-color: #FFC436;" class="card" >
-        <div style="display: flex; align-items: left;" color="white" class="ion-margin-top">
-          <ion-icon name="document-text-outline"   class="icon"></ion-icon>
-          <ion-card-title class="textheading ion-margin-top">8</ion-card-title>
-      </div>
-        <ion-card-subtitle class="text ion-margin-top">Rejected Expence Invoice</ion-card-subtitle>
-      </ion-card>
-      <ion-card style="background-color: #AC87C5;" class="card">
-        <div style="display: flex; align-items: left;" color="white" class="ion-margin-top">
-          <ion-icon name="document-text-outline"   class="icon"></ion-icon>
-          <ion-card-title class="textheading ion-margin-top">5</ion-card-title>
-      </div>
-        <ion-card-subtitle class="text ion-margin-top">Pending Check Handover</ion-card-subtitle>
-      </ion-card>
-  </div>
-  <div class="category">
-    <ion-card>
-      <div class="icon-text-container">
-        <ion-icon name="calendar-clear" size="large" style="color: #ED7D31;"></ion-icon>
-        <ion-card-subtitle class="ion-margin-top texttitle">Events</ion-card-subtitle>
-        <ion-icon name="arrow-forward-circle-outline" [routerLink]="['/event']"  size="large" class="last-icon"></ion-icon>
-      </div>
-    </ion-card>
-    
-    <ion-card>
-      <div class="icon-text-container">
-        <ion-icon name="calendar-clear"  size="large"  style="color: #ED7D31;" ></ion-icon>
-        <ion-card-subtitle class="ion-margin-top texttitle">Expence Category </ion-card-subtitle>
-        <ion-icon name="arrow-forward-circle-outline" [routerLink]="['/exp-category']" size="large" class="last-icon"></ion-icon> 
-      </div>
-    </ion-card>
-    <ion-card>
-      <div class="icon-text-container">
-        <ion-icon name="document-text" size="large" style="color: #ED7D31;"></ion-icon>
-        <ion-card-subtitle class="ion-margin-top texttitle">QB Categories </ion-card-subtitle>
-        <ion-icon name="arrow-forward-circle-outline" [routerLink]="['/qb-category']" size="large" class="last-icon"></ion-icon> 
-      </div>
-    </ion-card>
-  </div>
-  
-  <div class="merchantbox" style="display: flex; flex-direction: column; align-items: left;">
-    <h1 style="color:aliceblue">Merchant</h1>
-    <div style="display: flex; flex-direction: row; align-items: left;">
-      <ion-select placeholder="Select Merchant" class="Merchant">
-        <ion-select-option value="apple">Apple</ion-select-option>
-        <ion-select-option value="banana">Banana</ion-select-option>
-        <ion-select-option value="orange">Orange</ion-select-option>
-      </ion-select>
-      <ion-button class="merchantbtn" style="--background: #FEBE8C; color: #ffffff;">Show </ion-button>
-    </div>
-  </div>
-</div>
-<script src="assets/js/event.js"></script>
-</ion-content>
-  <ion-footer >
-    <ion-toolbar class="footer">
-      <ion-tabs >
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="home" [routerLink]="['/home2']">
-            <ion-icon name="home"></ion-icon>
-          </ion-tab-button>
-          <ion-tab-button tab="invoice" [routerLink]="['/invoice']">
-            <ion-icon name="logo-microsoft"></ion-icon>
-          </ion-tab-button>
-          <ion-tab-button tab="reports" [routerLink]="['/reports']">
-            <ion-icon name="document"></ion-icon>
-          </ion-tab-button>
-          <ion-tab-button tab="users" [routerLink]="['/users']">
-            <ion-icon name="person"></ion-icon>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
-    </ion-toolbar>
-  </ion-footer>
   
 

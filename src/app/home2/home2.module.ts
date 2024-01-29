@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { Home2PageRoutingModule } from './home2-routing.module';
-
+import { SharedModule } from '../shared/shared.module';
 import { Home2Page } from './home2.page';
 
 @NgModule({
@@ -13,6 +13,7 @@ import { Home2Page } from './home2.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     Home2PageRoutingModule
   ],
   declarations: [Home2Page]

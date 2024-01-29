@@ -1,30 +1,25 @@
-<ion-content>
-  <ion-header>
-    <img src="assets/images/expense-img.png" >
-    <ion-toolbar>
+<ion-content >
+    <ion-toolbar class="mainhome">
+      <img src="assets/images/expense-img.png" >
       <div class="centered-image">
         <img src="assets/images/xpm-logo.png" alt="XPM Logo" class="custom-image">
       </div>
-    <ion-item color="transparent">
-      <ion-label position="floating">First Name</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item class="ion-margin-top" color="transparent">
-      <ion-label position="floating">Last Name</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-
-       
+      <ion-item color="transparent">
+        <ion-label position="floating">First Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item class="ion-margin-top" color="transparent">
+        <ion-label position="floating">Last Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
       <div class="ion-margin-top check">
         <input type="checkbox" id="rememberMe">
         <label for="rememberMe" class="remember">Remember Me</label>
       </div>
-      
-     
       <div>
         <ion-button class="btnsign" [routerLink]="['/home2']">Sign in</ion-button>
       </div>
     </ion-toolbar>
-  </ion-header>
+  
 </ion-content>
 

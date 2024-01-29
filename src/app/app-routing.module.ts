@@ -53,7 +53,9 @@ const routes: Routes = [
     loadChildren: () => import('./event/event.module').then( m => m.EventPageModule)
   },
 
+
 ];
+
 
 @NgModule({
   imports: [

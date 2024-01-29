@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { InvoicePageRoutingModule } from './invoice-routing.module';
-
+import { SharedModule } from '../shared/shared.module';
 import { InvoicePage } from './invoice.page';
 
 @NgModule({
@@ -13,6 +13,7 @@ import { InvoicePage } from './invoice.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     InvoicePageRoutingModule
   ],
   declarations: [InvoicePage]
