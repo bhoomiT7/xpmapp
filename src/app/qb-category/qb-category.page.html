@@ -1,10 +1,10 @@
 <ion-toolbar  >
   <div class="search-avatar-container ion-margin-top">
-    <ion-searchbar show-cancel-button="focus" class="search" placeholder="Search..."></ion-searchbar>
+    <ion-searchbar value="" class="search" placeholder="Search..."></ion-searchbar>
   </div>
 </ion-toolbar> 
 <div class="menu">
-  <div class="menu-item" [routerLink]="['/event']" style="padding: 15px;" onclick="selectMenuItem(this)">Event</div>
+  <div class="menu-item" [routerLink]="['/event']" style="padding: 18px;" onclick="selectMenuItem(this)">Event</div>
   <div class="menu-item" [routerLink]="['/exp-category']" onclick="selectMenuItem(this)">Exp Categories</div>
   <div class="menu-item" [routerLink]="['/qb-category']" onclick="selectMenuItem(this)">QB Categories</div>
 </div>
@@ -17,7 +17,7 @@
         <ion-toolbar color="primary">
           <ion-title >Add Qb Category</ion-title>
           <ion-buttons slot="end">
-            <ion-button color="light" (click)="modal.dismiss()">Close</ion-button>
+            <ion-icon (click)="modal.dismiss()" src="assets/images/cancel.svg"size="large"></ion-icon>
           </ion-buttons>
         </ion-toolbar>
         <ion-list>
@@ -34,44 +34,44 @@
   </ion-modal>
   <ion-card>
     <div class="flex-container">
-      <h5>QB123</h5>
-      <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
-      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
+      <h5 class="eventsubdeatails">QB123</h5>
+      <ion-icon class="iconevent" src="assets/images/editnew.svg" ></ion-icon>
+      <ion-icon  class="iconevent2"slot="end"  src="assets/images/delete.svg" ></ion-icon>
     </div>
   </ion-card>
   <ion-card>
     <div class="flex-container">
-      <h5>QB2</h5>
-      <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
-      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
+      <h5  class="eventsubdeatails">QB2</h5>
+      <ion-icon class="iconevent" src="assets/images/editnew.svg"></ion-icon>
+      <ion-icon  class="iconevent2" slot="end"  src="assets/images/delete.svg" ></ion-icon>
     </div>
   </ion-card>
   <ion-card>
     <div class="flex-container"> 
-      <h5>	QB3</h5>
-      <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
-      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
+      <h5  class="eventsubdeatails">QB3</h5>
+      <ion-icon class="iconevent" src="assets/images/editnew.svg"></ion-icon>
+      <ion-icon  class="iconevent2" slot="end"  src="assets/images/delete.svg" ></ion-icon>
     </div>
   </ion-card>
   <ion-card>
     <div class="flex-container">
-      <h5>QB4</h5>
-      <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
-      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
+      <h5  class="eventsubdeatails">QB4</h5>
+      <ion-icon class="iconevent" src="assets/images/editnew.svg"></ion-icon>
+      <ion-icon   class="iconevent2" slot="end"  src="assets/images/delete.svg"  ></ion-icon>
     </div>
   </ion-card>
   <ion-card>
     <div class="flex-container">
-      <h5>QB5</h5>
-      <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
-      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
+      <h5  class="eventsubdeatails">QB5</h5>
+      <ion-icon class="iconevent" src="assets/images/editnew.svg"></ion-icon>
+      <ion-icon   class="iconevent2" slot="end"  src="assets/images/delete.svg" ></ion-icon>
     </div>
   </ion-card>
   <ion-card>
     <div class="flex-container">
-      <h5>QB6</h5>
-          <ion-icon class="iconevent" src="assets/images/editnew.svg" size="large"></ion-icon>
-      <ion-icon  slot="end"  src="assets/images/delete.svg"  size="large"></ion-icon>
+      <h5  class="eventsubdeatails">QB6</h5>
+          <ion-icon class="iconevent" src="assets/images/editnew.svg"></ion-icon>
+      <ion-icon  class="iconevent2" slot="end"  src="assets/images/delete.svg" ></ion-icon>
       
     </div>
   </ion-card>

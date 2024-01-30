@@ -1,11 +1,11 @@
 
   <ion-toolbar  >
     <div class="search-avatar-container ion-margin-top">
-      <ion-searchbar show-cancel-button="focus" class="search" placeholder="Search..."></ion-searchbar>
+      <ion-searchbar value="" class="search" placeholder="Search..."></ion-searchbar>
     </div>
   </ion-toolbar> 
   <div class="menu">
-    <div class="menu-item" [routerLink]="['/event']" style="padding: 15px;" onclick="selectMenuItem(this)">Event</div>
+    <div class="menu-item" [routerLink]="['/event']" style="padding: 18px;" onclick="selectMenuItem(this)">Event</div>
     <div class="menu-item" [routerLink]="['/exp-category']" onclick="selectMenuItem(this)">Exp Categories</div>
     <div class="menu-item" [routerLink]="['/qb-category']" onclick="selectMenuItem(this)">QB Categories</div>
   </div>
@@ -17,7 +17,7 @@
         <ion-toolbar color="primary">
           <ion-title >Add event</ion-title>
           <ion-buttons slot="end">
-            <ion-button color="light" (click)="modal.dismiss()">Close</ion-button>
+            <ion-icon (click)="modal.dismiss()" src="assets/images/cancel.svg"size="large"></ion-icon>
           </ion-buttons>
         </ion-toolbar>
         <ion-list>

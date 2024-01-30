@@ -1,11 +1,15 @@
 
-ion-content {
-  --ion-background-color: #f4f4f4;
-  // --ion-padding: 20px;
-}
+// ion-content {
+//   margin:0;
+//   padding: 0;
+// }
 .header{
-  width: 100%;
-  padding-left: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+  margin: 13px 0px 0px 13px;
+  color: gray;
 }
 
 /* Your existing styles */
@@ -65,22 +69,11 @@ span {
 .iconcolor {
   color: gray;
 }
-
-.icondemo {
-  font-size: 20px;
-  margin-top: 15px;
-  color: #089de3;
+ion-card {
+  margin-top: 20px !important;
+  //margin-bottom: 20px !important;
+  border-radius: 15px;
 }
-
-.search {
-  margin-top: 10px;
-}
-
-.search-avatar-container {
-  display: flex;
-}
-
-
 
 .toolbar-background {
   background-color: pink;
@@ -111,16 +104,16 @@ span {
 .head {
   display: flex;
   overflow-x: auto;
-  padding-left: 18px;
-  padding-right: 18px;
-  gap: 20px;
+  // padding-left: 18px;
+  // padding-right: 18px;
+
 }
 
-.head ion-card {
-  margin: 0 !important;
-  padding: 0 !important;
+// .head ion-card {
+//   margin: 0 !important;
+//   padding: 0 !important;
   
-}
+// }
 
 .icon {
   display: flex;
@@ -150,37 +143,31 @@ span {
   flex: 0 0 auto;
   width: 250px;
   height: 180px;
-  margin-right: 15px;
   box-sizing: border-box;
   background: url('../../assets/images/back1.jpg') no-repeat;
   background-size: cover;
   position: relative;
-  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
 }
-.card::before{
+
+.card::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7));
-  
 }
 .card2 {
   flex: 0 0 auto;
   width: 250px;
   height: 180px;
-  margin-right: 15px;
   box-sizing: border-box;
   background: url('../../assets/images/back2.jpg') no-repeat;
   background-size: cover;
   position: relative;
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
@@ -202,12 +189,10 @@ span {
   flex: 0 0 auto;
   width: 250px;
   height: 180px;
-  margin-right: 15px;
   box-sizing: border-box;
   background: url('../../assets/images/back3.jpg') no-repeat;
   background-size: cover;
   position: relative;
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
@@ -229,12 +214,10 @@ span {
   flex: 0 0 auto;
   width: 250px;
   height: 180px;
-  margin-right: 15px;
   box-sizing: border-box;
   background: url('../../assets/images/back4.jpg') no-repeat;
   background-size: cover;
   position: relative;
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
@@ -257,12 +240,10 @@ span {
   flex: 0 0 auto;
   width: 250px;
   height: 180px;
-  margin-right: 15px;
   box-sizing: border-box;
   background: url('../../assets/images/back5.jpg') no-repeat;
   background-size: cover;
   position: relative;
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
